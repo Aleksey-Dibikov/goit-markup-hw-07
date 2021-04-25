@@ -13,6 +13,11 @@
   background-color: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.1);
   outline: currentColor;
+
+  &:hover .modal__button__icon,
+  &:focus .modal__button__icon {
+    fill: var(--hover-color);
+  }
 }
 
 .modal__button__icon {
@@ -22,11 +27,6 @@
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
-  &:hover .modal__button__icon,
-  &:focus .modal__button__icon {
-    fill: var(--hover-color);
-  }
 }
 
 .registration__button {

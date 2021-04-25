@@ -8,7 +8,7 @@
   --dark-bg-color: #2f303a;
   --second-bg-color: #f5f4fa;
   --nav-footer-color: rgba(255, 255, 255, 0.6);
-  --title-font: Roboto;
+  --title-font: Roboto, sans-serif;
   --color-button-portfolio: #f5f4fa;
   --container-border-color: #eeeeee;
   --color-social__icons: #afb1b8;
@@ -29,7 +29,7 @@ header
 fooer
 */
 .body {
-  font-family: var(--title-font), sans-serif;
+  font-family: var(--title-font);
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -89,7 +89,7 @@ img {
 }
 
 .body-portfolio {
-  font-family: var(--title-font), sans-serif;
+  font-family: var(--title-font);
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -256,7 +256,7 @@ img {
   margin-bottom: 10px;
 }
 
-.title__heading {
+.footer__title__heading {
   margin-bottom: 20px;
   --title-color: var(--title-second-color);
 }
@@ -327,6 +327,11 @@ img {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.input__line:hover + .registration__form__icon,
+.input__line:focus + .registration__form__icon {
+  fill: var(--hover-color);
+}
+
 .registration__form__icon {
   position: absolute;
   left: 12px;
@@ -338,11 +343,6 @@ img {
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.registration__form__icon:hover + .registration__form__icon,
-.registration__form__icon:focus + .registration__form__icon {
-  fill: var(--hover-color);
 }
 
 .textarea__window {
@@ -394,6 +394,14 @@ img {
   overflow: hidden;
 }
 
+.checkbox:checked + .icon__check {
+  background-color: var(--hover-color);
+  border-color: var(--hover-color);
+  background-image: url(../images/icons-svg/modal/icon-check.svg);
+  background-size: contain;
+  background-origin: border-box;
+}
+
 .icon__check {
   display: inline-block;
   width: 16px;
@@ -404,14 +412,6 @@ img {
   transition-property: background-color, border;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.icon__check:checked + .icon__check {
-  background-color: var(--hover-color);
-  border-color: var(--hover-color);
-  background-image: url(../images/icons-svg/modal/icon-check.svg);
-  background-size: contain;
-  background-origin: border-box;
 }
 
 .agreement__conditions {
@@ -433,6 +433,11 @@ img {
   outline: currentColor;
 }
 
+.modal__button:hover .modal__button__icon,
+.modal__button:focus .modal__button__icon {
+  fill: var(--hover-color);
+}
+
 .modal__button__icon {
   width: 18px;
   height: 18px;
@@ -440,11 +445,6 @@ img {
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.modal__button__icon:hover .modal__button__icon,
-.modal__button__icon:focus .modal__button__icon {
-  fill: var(--hover-color);
 }
 
 .registration__button {
@@ -692,6 +692,14 @@ img {
   color: inherit;
 }
 
+.box:hover .img__content {
+  transform: translateY(0);
+}
+
+.link:focus .img__content {
+  transform: translateY(0);
+}
+
 .overlay {
   position: relative;
   overflow: hidden;
@@ -713,11 +721,6 @@ img {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-property: transform, background-color, color;
-}
-
-.img__content:hover .img__content,
-.img__content:focus .img__content {
-  transform: translateY(0);
 }
 
 .header {
@@ -843,6 +846,7 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
+  outline: currentColor;
   padding: 0;
   width: 170px;
   height: 90px;

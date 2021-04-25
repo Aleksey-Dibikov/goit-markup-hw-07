@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AAAA,AAAA,WAAW,AAAC,CACV,OAAO,CAAE,IAAI,CACb,WAAW,CAAE,MAAM,CACnB,YAAY,CAAE,IAAI,CACnB,AAED,AAAA,aAAa,AAAC,CACZ,OAAO,CAAE,MAAM,CACf,KAAK,CAAE,kBAAkB,CAC1B",
-    "sources": [
-        "../sass/components/header-nav.scss"
-    ],
-    "names": [],
-    "file": "header-nav.min.css"
-}

@@ -13,6 +13,14 @@
   padding: 0;
   clip: rect(0 0 0 0);
   overflow: hidden;
+
+  &:checked + .icon__check {
+    background-color: var(--hover-color);
+    border-color: var(--hover-color);
+    background-image: url(../images/icons-svg/modal/icon-check.svg);
+    background-size: contain;
+    background-origin: border-box;
+  }
 }
 
 .icon__check {
@@ -25,14 +33,6 @@
   transition-property: background-color, border;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
-  &:checked + .icon__check {
-    background-color: var(--hover-color);
-    border-color: var(--hover-color);
-    background-image: url(../images/icons-svg/modal/icon-check.svg);
-    background-size: contain;
-    background-origin: border-box;
-  }
 }
 
 .agreement__conditions {

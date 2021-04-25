@@ -25,6 +25,14 @@
   &:hover .link {
     color: inherit;
   }
+
+  &:hover .img__content {
+    transform: translateY(0);
+  }
+}
+
+.link:focus .img__content {
+  transform: translateY(0);
 }
 
 .overlay {
@@ -51,9 +59,4 @@
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-property: transform, background-color, color;
-
-  &:hover .img__content,
-  &:focus .img__content {
-    transform: translateY(0);
-  }
 }
