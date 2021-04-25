@@ -14,14 +14,14 @@
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-property: border-color;
-}
 
-.partners__link:hover,
-.partners__link:focus {
-  border-color: currentColor;
-}
+  &:hover,
+  &:focus {
+    border-color: currentColor;
+  }
 
-.partners__link:hover .icon,
-.partners__link:focus .icon {
-  fill: currentColor;
+  &:hover .icon,
+  &:focus .icon {
+    fill: currentColor;
+  }
 }

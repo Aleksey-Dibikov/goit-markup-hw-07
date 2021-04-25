@@ -31,11 +31,11 @@
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.input__line:hover + .registration__form__icon,
-.input__line:focus + .registration__form__icon {
-  fill: var(--hover-color);
+  &:hover + .registration__form__icon,
+  &:focus + .registration__form__icon {
+    fill: var(--hover-color);
+  }
 }
 
 .textarea__window {
@@ -54,18 +54,16 @@
 .textarea__window {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-}
 
-.input__line:hover,
-.input__line:focus,
-.textarea__window:hover,
-.textarea__window:focus {
-  border-color: var(--hover-color);
-}
+  &:hover,
+  &:focus {
+    border-color: var(--hover-color);
+  }
 
-.textarea__window::placeholder {
-  font-size: 12px;
-  line-height: 14px;
-  letter-spacing: 0.01em;
-  color: rgba(117, 117, 117, 0.5);
+  &::placeholder {
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
+  }
 }

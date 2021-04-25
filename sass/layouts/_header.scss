@@ -6,16 +6,16 @@
   letter-spacing: 0.02em;
 
   height: 80px;
-}
 
-.header::before {
-  position: absolute;
-  display: block;
-  content: '';
-  width: 100%;
-  right: 0;
-  bottom: 0;
-  border-bottom: 1px solid #ececec;
+  &::before {
+    position: absolute;
+    display: block;
+    content: '';
+    width: 100%;
+    right: 0;
+    bottom: 0;
+    border-bottom: 1px solid #ececec;
+  }
 }
 
 .header__container {
